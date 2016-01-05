@@ -16,7 +16,13 @@ public class Main{
 
     get("/output", (request, response) -> {
       HashMap model = new HashMap();
+      String scrabbleWord = request.queryParams("S_word");
 
+      ScrabbleScore scrabbleScore = new ScrabbleScore();
+      int sScore = scrabbleScore.scrabbleScoreCounter(scrabbleWord);
+
+      model.put("scrabbleWord", scrabbleWord);
+      model.put("sScore", sScore);
       model.put("template", "templates/output.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
