@@ -9,3 +9,6 @@ public class ScrabbleScoreTest{
     assertEquals(score, scrabbleScore.scrabbleScoreCounter("a"));
   }
 }
+//   @Test
+//   public void scrabbleScoreCounter_return
+// }
