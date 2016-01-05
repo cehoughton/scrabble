@@ -28,6 +28,12 @@ public class ScrabbleScoreTest{
     int score = 4;
     assertEquals(score, scrabbleScore.scrabbleScoreCounter("y"));
   }
+  @Test
+  public void scrabbleScoreCounter_returnAScrabbleScoreForLetterK_5(){
+    ScrabbleScore scrabbleScore = new ScrabbleScore();
+    int score = 5;
+    assertEquals(score, scrabbleScore.scrabbleScoreCounter("k"));
+  }
 }
 //   @Test
 //   public void scrabbleScoreCounter_return

@@ -16,6 +16,9 @@ public class ScrabbleScore {
         else if(scrabbleWord.charAt(i) == 'y' || scrabbleWord.charAt(i) == 'Y'){
           scrabbleScore += 4;
         }
+        else if(scrabbleWord.charAt(i) == 'k' || scrabbleWord.charAt(i) == 'K'){
+          scrabbleScore += 5;
+        }
         else {
           scrabbleScore += 0;
         }
