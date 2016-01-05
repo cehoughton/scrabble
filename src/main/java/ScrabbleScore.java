@@ -13,6 +13,9 @@ public class ScrabbleScore {
         else if(scrabbleWord.charAt(i) == 'c' || scrabbleWord.charAt(i) == 'C'){
           scrabbleScore += 3;
         }
+        else if(scrabbleWord.charAt(i) == 'y' || scrabbleWord.charAt(i) == 'Y'){
+          scrabbleScore += 4;
+        }
         else {
           scrabbleScore += 0;
         }
