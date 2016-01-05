@@ -10,6 +10,9 @@ public class ScrabbleScore {
         else if(scrabbleWord.charAt(i) == 'd' || scrabbleWord.charAt(i) == 'D'){
           scrabbleScore += 2;
         }
+        else if(scrabbleWord.charAt(i) == 'c' || scrabbleWord.charAt(i) == 'C'){
+          scrabbleScore += 3;
+        }
         else {
           scrabbleScore += 0;
         }

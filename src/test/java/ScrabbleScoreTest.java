@@ -15,6 +15,13 @@ public class ScrabbleScoreTest{
     int score = 2;
     assertEquals(score, scrabbleScore.scrabbleScoreCounter("d"));
   }
+
+  @Test
+  public void scrabbleScoreCounter_returnAScrabbleScoreForLetterC_3(){
+    ScrabbleScore scrabbleScore = new ScrabbleScore();
+    int score = 3;
+    assertEquals(score, scrabbleScore.scrabbleScoreCounter("c"));
+  }
 }
 //   @Test
 //   public void scrabbleScoreCounter_return
