@@ -19,6 +19,12 @@ public class ScrabbleScore {
         else if(scrabbleWord.charAt(i) == 'k' || scrabbleWord.charAt(i) == 'K'){
           scrabbleScore += 5;
         }
+        else if(scrabbleWord.charAt(i) == 'j' || scrabbleWord.charAt(i) == 'J'){
+          scrabbleScore += 8;
+        }
+        else if(scrabbleWord.charAt(i) == 'z' || scrabbleWord.charAt(i) == 'Z'){
+          scrabbleScore += 10;
+        }
         else {
           scrabbleScore += 0;
         }

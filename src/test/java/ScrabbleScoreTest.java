@@ -34,6 +34,18 @@ public class ScrabbleScoreTest{
     int score = 5;
     assertEquals(score, scrabbleScore.scrabbleScoreCounter("k"));
   }
+  @Test
+  public void scrabbleScoreCounter_returnAScrabbleScoreForLetterJ_8(){
+    ScrabbleScore scrabbleScore = new ScrabbleScore();
+    int score = 8;
+    assertEquals(score, scrabbleScore.scrabbleScoreCounter("j"));
+  }
+  @Test
+  public void scrabbleScoreCounter_returnAScrabbleScoreForLetterZ_8(){
+    ScrabbleScore scrabbleScore = new ScrabbleScore();
+    int score = 10;
+    assertEquals(score, scrabbleScore.scrabbleScoreCounter("z"));
+  }
 }
 //   @Test
 //   public void scrabbleScoreCounter_return
