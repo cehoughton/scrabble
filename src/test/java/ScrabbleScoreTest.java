@@ -46,6 +46,12 @@ public class ScrabbleScoreTest{
     int score = 10;
     assertEquals(score, scrabbleScore.scrabbleScoreCounter("z"));
   }
+  @Test
+  public void scrabbleScoreCounter_returnAScrabbleScoreForLetterADCYKJZ_33(){
+    ScrabbleScore scrabbleScore = new ScrabbleScore();
+    int score = 33;
+    assertEquals(score, scrabbleScore.scrabbleScoreCounter("adcykjz"));
+  }
 }
 //   @Test
 //   public void scrabbleScoreCounter_return
