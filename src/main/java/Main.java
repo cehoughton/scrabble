@@ -13,5 +13,12 @@ public class Main{
       model.put("template", "templates/form.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
+
+    get("/output", (request, response) -> {
+      HashMap model = new HashMap();
+
+      model.put("template", "templates/output.vtl");
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
   }
 }
