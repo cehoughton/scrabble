@@ -7,8 +7,11 @@ public class ScrabbleScore {
         if(scrabbleWord.charAt(i) == 'a' || scrabbleWord.charAt(i) == 'A'){
           scrabbleScore += 1;
         }
+        else if(scrabbleWord.charAt(i) == 'd' || scrabbleWord.charAt(i) == 'D'){
+          scrabbleScore += 2;
+        }
         else {
-          scrabbleWord += 0;
+          scrabbleScore += 0;
         }
       }
       return scrabbleScore;
